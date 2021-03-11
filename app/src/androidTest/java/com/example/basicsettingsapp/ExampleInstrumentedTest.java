@@ -34,7 +34,6 @@ import static org.hamcrest.Matchers.not;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
-@LargeTest
 public class ExampleInstrumentedTest {
 
     @Rule
@@ -46,8 +45,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.basicsettingsapp", appContext.getPackageName());
-
-        onView(withId(R.id.download_incoming)).check(matches(isDisplayed()));
     }
 
     @Test
