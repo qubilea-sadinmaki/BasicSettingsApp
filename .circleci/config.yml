@@ -1,0 +1,9 @@
+version: 2.1
+
+orbs:
+  android: circleci/android@1.0
+workflows:
+  test:
+    jobs:
+      - android/run-ui-tests:
+          system-image: system-images;android-28;default;x86
